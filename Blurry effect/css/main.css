@@ -1,0 +1,78 @@
+html * {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  background: #c8dce7;
+  color: black;
+  font-family: "Poppins";
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+img {
+  position: absolute;
+  z-index: -2;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  height: 100vh;
+  width: 40vw;
+  position: relative;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-clip: padding-box;
+  -webkit-box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+          box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+.container h2 {
+  font-size: 1.7em;
+}
+
+.container h1,
+.container h2 {
+  margin: 0;
+}
+
+.container p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4em;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+}
+
+#img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#img .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#img .img #col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffff;
+}
+/*# sourceMappingURL=main.css.map */
