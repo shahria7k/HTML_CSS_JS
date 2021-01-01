@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+//sass variable
+$mainColor: #333;
+$navBg: #047aed;
+$logoColor: white;
+/*css vairables*/
+:root{
+    --primaryColor: #333;
+    --primaryBg : #047aed;
+    --secondaryColor: white;
+}
+/*css reset*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    color: $mainColor;
+    line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+h1, h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+}
+
+/* Header*/
+.navbar{
+
+    text-align: center;
+    background-color: var(--primaryBg);
+    color: var(--secondaryColor);
+    height: 70px;
+
+    ul{
+        display: flex;
+    }
+    a{
+        color: var(--secondaryColor);
+        padding: 10px;
+        margin: 0 5px;
+        &:hover{
+            border-bottom: 2px white solid;
+        }
+    }
+
+    //utility class
+    .flex{
+        justify-content: space-between;
+    }
+}
+/* showcase*/
+.showcase{
+    height: 400px;
+    background-color: var(--primaryBg);
+    color: var(--secondaryColor);
+    position: relative;
+    h1{
+        font-size: 40px;
+
+    }
+    p{
+        margin: 20px 0;
+    }
+    .grid{
+        grid-template-columns: 55% 45%;
+        grid-gap: 30px;
+        overflow: visible;
+    }
+    &::before,
+    &::after{
+        content:"";
+        position: absolute;
+        height: 100px;
+        bottom: -50px;
+        right: 0;
+        left: 0;
+        transform: skewY(-2deg);
+        background-color: white;
+        -webkit-transform: skewY(-2deg);
+        -moz-transform: skewY(-2deg);
+        -ms-transform: skewY(-2deg);
+        -o-transform: skewY(-2deg);
+}
+}
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 0 40px;
+    z-index: 100;
+    justify-self: flex-end;
+    .form-control{
+        margin: 30px 0;
+    }
+    input[type='text'],
+    input[type='email']{
+        border: 0;
+        border-bottom: 1px solid #b4becb;
+        width: 100%;
+        padding: 3px;
+        font-size: 16px;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+
+
+/*stats*/
+.stats{
+    padding-top: 100px;
+
+}
